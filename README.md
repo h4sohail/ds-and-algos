@@ -1,1 +1,1 @@
-# ds-and-algos
+# Data structures and algorithms review
