@@ -37,10 +37,3 @@ class LinkedList():
             prev = current
             current = next_node
         self.head = prev
-            
-
-ll = LinkedList()
-for item in ['a', 'b', 'c']:
-    ll.insert(item)
-ll.reverse()
-print(ll)
