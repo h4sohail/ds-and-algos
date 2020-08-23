@@ -31,7 +31,6 @@ def count_twice(string):
             count += 1
     return count
 
-print(count_twice("tacocat"))
 def is_palindrome_permutation(string):
     if string == "":
         return
@@ -43,5 +42,4 @@ def is_palindrome_permutation(string):
         return length / 2 == count
     else:
         return (length - 1) / 2 == count
-
-print(is_palindrome_permutation("damam"))
+        

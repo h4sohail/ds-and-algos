@@ -17,4 +17,3 @@ def off_by_one(string1, string2):
             error_cnt += 1
 
     return True
-print(off_by_one("test", "test12"))

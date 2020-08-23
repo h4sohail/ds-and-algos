@@ -25,5 +25,4 @@ def has_duplicate(string):
     orignal_length = len(string)
     set_length = len(set(string))
     return set_length == orignal_length
-
-print(has_duplicate(""))
+    
