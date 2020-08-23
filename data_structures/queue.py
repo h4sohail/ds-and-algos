@@ -1,11 +1,14 @@
 class Queue():
     def __init__(self):
         self._queue = []
-        self._count = []
+        self._count = 0
 
     def __str__(self):
         return str(self._queue)
-
+    
+    def __len__(self):
+        return len(self._queue)
+    
     def count(self):
         """The count of items in the queue
 
@@ -13,6 +16,15 @@ class Queue():
             (int): The number of items in the array
         """
         return self._count
+
+    def peek(self):
+        """Return the last element in the queue
+
+        Returns:
+            item (any): Last element in the queue
+        """
+        if self.count() > 0:
+            return self._queue[-1]
 
     def enqueue(self, item):
         """Add an item to the end of the queue
@@ -29,7 +41,7 @@ class Queue():
         Returns:
             (any): The item from the start of the queue
         """
-        if len(self._queue) != 0:
+        if self.count() > 0:
             self._count -= 1
             temp = self._queue[0]
             del self._queue[0]
